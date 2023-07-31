@@ -24,10 +24,6 @@ const args = {
   Rate: ~~process.argv[4],
   threads: ~~process.argv[5],
 };
-
-const KillScript = () => process.exit(1);
-setTimeout(KillScript, args.time * 1000);
-
  
  const defaultCiphers = crypto.constants.defaultCoreCipherList.split(":");
  const ciphers = "GREASE:" + [
