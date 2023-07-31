@@ -74,13 +74,6 @@ setTimeout(KillScript, args.time * 1000);
  var proxies = readLines(proxyFile);
  var userAgents = readLines("ua.txt");
  
- const args = {
-     target: process.argv[2],
-     time: ~~process.argv[3],
-     Rate: ~~process.argv[4],
-     threads: ~~process.argv[5]
- }
- 
  const parsedTarget = url.parse(args.target);
 
  if (cluster.isMaster) {
